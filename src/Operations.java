@@ -17,13 +17,17 @@ public class Operations {
         return events;
     }
 
-    public void remove(Long id){
-        for (Event e: events) {
-            if(e.getId()==id){
+    public void remove(Long id) {
+        for (Event e : events) {
+            if (e.getId() == id) {
                 events.remove(e);
                 break;
             }
         }
+    }
 
+
+    public void addEvent(Event e){
+        events.add(e);
     }
 }
