@@ -56,5 +56,15 @@ public class Event {
         this.description = description;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Event{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", budget=" + budget +
+                ", startDate=" + startDate +
+                ", endDate=" + endDate +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
